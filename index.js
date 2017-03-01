@@ -1,4 +1,4 @@
-import 'todomvc-app-css/index.css';
+//import 'todomvc-app-css/index.css'; - вот как можно подключить css из пакета
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
