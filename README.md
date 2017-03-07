@@ -1,5 +1,10 @@
 Redux DevTools todomvc example
 
+#Автодокументация
+npm i -g jsdoc docdash
+
+См. https://eugen35.gitbooks.io/varia/content/auto_doc_generation.html
+
 #Тестирование
 ##Запуск тестов
 npm test
