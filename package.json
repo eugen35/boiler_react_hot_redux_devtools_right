@@ -7,7 +7,7 @@
     "start": "node server.js",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "doc": "jsdoc ./src/project ./__tests__/unit --recurse --destination ./doc/auto_generated/jsdoc/projectdoc --template node_modules/docdash",
+    "doc": "jsdoc ./src/project ./__tests__/unit --recurse --destination ./__doc__/auto_generated/jsdoc/projectdoc --template node_modules/docdash",
     "create_doc_with_jsdoc": "npm run create_stack_doc_with_jsdoc && npm run create_project_doc_with_jsdoc",
     "create_stack_doc_with_jsdoc": "jsdoc ./src/stack ./test/unit --recurse --destination ./doc/auto_generated/jsdoc/stackdoc --template node_modules/docdash",
     "create_project_doc_with_jsdoc": "jsdoc ./src/project ./test/unit --recurse --destination ./doc/auto_generated/jsdoc/projectdoc --template node_modules/docdash",

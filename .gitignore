@@ -7,5 +7,8 @@ npm-debug.log*
 #webstorm
 .idea
 
+#Автогенерируемая документация
+__doc__/auto_generated/*
+
 #моя временная заглушка для env
 #env_gitignored.js - в проекте нужно раскомментировать
