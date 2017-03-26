@@ -1,7 +1,8 @@
 Redux DevTools todomvc example
 
 #Автодокументация
-npm i -g jsdoc docdash
+npm i -g jsdoc
+При этом используем шаблон docdash, который у нас стоит в dev dependencies.
 
 См. https://eugen35.gitbooks.io/varia/content/auto_doc_generation.html
 
