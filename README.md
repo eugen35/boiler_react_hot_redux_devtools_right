@@ -1,10 +1,31 @@
-Redux DevTools todomvc example
+**Redux DevTools Boilerplate**
 
 #Автодокументация
 npm i -g jsdoc
 При этом используем шаблон docdash, который у нас стоит в dev dependencies.
 
 См. https://eugen35.gitbooks.io/varia/content/auto_doc_generation.html
+
+#Сборка пакета и вызова его потом в другом проекте
+##Сборка пакета
+npm run bundle
+npm run bundle:watch - для автоматической пересборке при изменении ресурсных файлов.
+Помните, что перед сборкой нужно указать новый номер версии в теге version файла package.json.
+Результат сборки как видно из webpack.bundle.config.js, помещается в \dist\bundle.js. Что и указано в теге main файла package.json.
+Результат сборки должен быть включён в контроль версий, т.к. именно результат сборки будет позднее отдан тому, кто запрашивает собранный пакет.
+
+То, что вы хотите, чтобы было собрано, должно быть указано в файле index.bundle.js.
+Только оно и соберётся, поскольку именно он указан как ключ entry в файле webpack.bundle.config.js.   
+
+//@todo Желательно весь js в папку src закинуть (кроме index.bundle.js - он в корне).
+##Вызов собранного пакета в другом проекте
+В package.json того кода, где собираемся использовать собранные нами ранее пакеты пишем, например: 
+"dependencies": {
+    "i18ns_pl_mock": "git://github.com/eugen35/i18ns_pl_mock.git",
+    "abac-sync": "git+https://ЛОГИН:ПАРОЛЬ@bitbucket.org/eugen35/abac-sync.git"
+}
+### Получение новой версии собранного пакета в другом проекте
+npm update ИМЯ_ПАКЕТА
 
 #Тестирование
 ##Запуск тестов
