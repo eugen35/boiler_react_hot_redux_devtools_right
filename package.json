@@ -1,7 +1,7 @@
 {
-  "name": "todomvc",
-  "version": "0.0.0",
-  "description": "TodoMVC example for redux",
+  "name": "boiler-react-redux-hot-devtools",
+  "version": "0.0.1",
+  "description": "Boiler plate: react, redux, devtools, hot-reload",
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "node server.js",
@@ -18,42 +18,41 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/redux-devtools.git"
+    "url": "https://github.com/eugen35/boiler_react_hot_redux_devtools_right.git"
   },
   "keywords": [
     "react",
-    "reactjs",
+    "redux",
+    "boiler plate",
+    "devtools",
     "hot",
     "reload",
     "hmr",
     "live",
-    "edit",
-    "webpack",
-    "flux"
+    "webpack"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gaearon/redux-devtools/issues"
-  },
-  "homepage": "https://github.com/gaearon/redux-devtools#readme",
+  "homepage": "https://github.com/eugen35/boiler_react_hot_redux_devtools_right#readme",
   "dependencies": {
     "classnames": "^2.1.2",
+    "prop-types": "^15.6.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.1.0",
     "redux": "^3.1.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.3.17",
     "babel-core": "^6.3.17",
-    "babel-jest": "^19.0.0",
     "babel-loader": "^6.2.0",
-    "babel-preset-es2015-loose": "^6.1.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "6.3.13",
-    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
-	"docdash": "^0.4.0",
-    "jest": "^19.0.2",
+    "docdash": "^0.4.0",
+    "mocha": "^4.0.1",
     "node-libs-browser": "^0.5.2",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^3.0.0-beta.1",
