@@ -23,15 +23,16 @@ module.exports = {
       'redux-devtools': path.join(__dirname, 'redux_devtools'),
       'react': path.join(__dirname, 'node_modules', 'react')
     },
-    extensions: ['', '.js']
+    //extensions: ['', '.js']
+    extensions: ['.js']
   },
-  resolveLoader: {
-    'fallback': path.join(__dirname, 'node_modules')
-  },
+  //resolveLoader: {
+   // 'fallback': path.join(__dirname, 'node_modules')
+  //},
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader'],
       exclude: /node_modules/,
       include: __dirname
     }, {
@@ -40,7 +41,7 @@ module.exports = {
       include: path.join(__dirname, '..', '..', 'src')
     }, {
       test: /\.css?$/,
-      loaders: ['style', 'raw'],
+      loaders: ['style-loader', 'raw-loader'],
       include: __dirname
     }]
   },

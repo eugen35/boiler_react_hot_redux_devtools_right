@@ -1,4 +1,4 @@
-**Redux DevTools Boilerplate**
+**React Redux HotReload DevTools Boilerplate**
 
 #Автодокументация
 npm i -g jsdoc
