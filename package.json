@@ -5,8 +5,7 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "node server.js",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
+    "test": "mocha --require babel-register __tests__ --recursive",
     "bundle": "webpack --config ./webpack.bundle.config.js",
     "bundle:watch": "webpack --watch --config ./webpack.bundle.config.js",
     "doc": "jsdoc ./src/project ./__tests__/unit --recurse --destination ./__doc__/auto_generated/jsdoc/projectdoc --template node_modules/docdash",
